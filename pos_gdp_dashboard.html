@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf09336561a605ca0f1cc274796d2308 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf09336561a605ca0f1cc274796d2308" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf09336561a605ca0f1cc274796d2308 = L.map(
+                "map_cf09336561a605ca0f1cc274796d2308",
+                {
+                    center: [35.8617, 104.1954],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33aabf5c93ad9b6469932f4a2cabaf1f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_33aabf5c93ad9b6469932f4a2cabaf1f.addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+            var circle_marker_115c524707ad2518da68d0278e8158c8 = L.circleMarker(
+                [36.3427, 118.1498],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.22, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_8be298d59491d5b767b14927539c668b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8efba8ff52005b559f90b3f49e6ecc7d = $(`<div id="html_8efba8ff52005b559f90b3f49e6ecc7d" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Shandong<br>                 <b>Total Stores:</b> 711<br>                 <b>Growth Rate 2020:</b> -11.17%<br>                 <b>Growth Rate 2021:</b> 0.20%<br>                 <b>Growth Rate 2022:</b> -18.72%<br>                 <b>Growth Rate 2023:</b> 9.54%<br>                 <b>GDP Growth Rate 2020:</b> 3.24%<br>                 <b>GDP Growth Rate 2021:</b> 14.10%<br>                 <b>GDP Growth Rate 2022:</b> 5.52%<br>                 <b>GDP Growth Rate 2023:</b> 5.24%             </div>`)[0];
+                popup_8be298d59491d5b767b14927539c668b.setContent(html_8efba8ff52005b559f90b3f49e6ecc7d);
+            
+        
+
+        circle_marker_115c524707ad2518da68d0278e8158c8.bindPopup(popup_8be298d59491d5b767b14927539c668b)
+        ;
+
+        
+    
+    
+            var circle_marker_15dae20e63ae02e01d0b9c001cc0f893 = L.circleMarker(
+                [32.0617, 118.7636],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.74, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_8e21ed4785691db3eec5a6821ed771b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eafdcc4e89120cd730d6fe190c3d7dff = $(`<div id="html_eafdcc4e89120cd730d6fe190c3d7dff" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Jiangsu<br>                 <b>Total Stores:</b> 637<br>                 <b>Growth Rate 2020:</b> -13.18%<br>                 <b>Growth Rate 2021:</b> -0.76%<br>                 <b>Growth Rate 2022:</b> -12.48%<br>                 <b>Growth Rate 2023:</b> 5.82%<br>                 <b>GDP Growth Rate 2020:</b> 4.74%<br>                 <b>GDP Growth Rate 2021:</b> 14.62%<br>                 <b>GDP Growth Rate 2022:</b> 3.93%<br>                 <b>GDP Growth Rate 2023:</b> 5.11%             </div>`)[0];
+                popup_8e21ed4785691db3eec5a6821ed771b1.setContent(html_eafdcc4e89120cd730d6fe190c3d7dff);
+            
+        
+
+        circle_marker_15dae20e63ae02e01d0b9c001cc0f893.bindPopup(popup_8e21ed4785691db3eec5a6821ed771b1)
+        ;
+
+        
+    
+    
+            var circle_marker_1409103f086a25b196fbff1cc1454814 = L.circleMarker(
+                [29.1832, 120.0934],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.78, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_371b5644b3bd705ad55724ff53ff2f31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e39ad1baff08eeee95e9de82324ebfa = $(`<div id="html_1e39ad1baff08eeee95e9de82324ebfa" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Zhejiang<br>                 <b>Total Stores:</b> 539<br>                 <b>Growth Rate 2020:</b> -10.98%<br>                 <b>Growth Rate 2021:</b> -1.23%<br>                 <b>Growth Rate 2022:</b> -10.80%<br>                 <b>Growth Rate 2023:</b> 3.92%<br>                 <b>GDP Growth Rate 2020:</b> 3.92%<br>                 <b>GDP Growth Rate 2021:</b> 14.29%<br>                 <b>GDP Growth Rate 2022:</b> 5.22%<br>                 <b>GDP Growth Rate 2023:</b> 6.00%             </div>`)[0];
+                popup_371b5644b3bd705ad55724ff53ff2f31.setContent(html_1e39ad1baff08eeee95e9de82324ebfa);
+            
+        
+
+        circle_marker_1409103f086a25b196fbff1cc1454814.bindPopup(popup_371b5644b3bd705ad55724ff53ff2f31)
+        ;
+
+        
+    
+    
+            var circle_marker_4c25bf110f73adb24340ee70717b8b9c = L.circleMarker(
+                [30.6517, 104.0759],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.9, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_baec90305dba6fb752974e18161b898d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a365ec8bba55fa45d09807db42742c5 = $(`<div id="html_5a365ec8bba55fa45d09807db42742c5" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Sichuan<br>                 <b>Total Stores:</b> 445<br>                 <b>Growth Rate 2020:</b> -9.71%<br>                 <b>Growth Rate 2021:</b> 13.27%<br>                 <b>Growth Rate 2022:</b> -17.24%<br>                 <b>Growth Rate 2023:</b> 10.72%<br>                 <b>GDP Growth Rate 2020:</b> 4.83%<br>                 <b>GDP Growth Rate 2021:</b> 11.50%<br>                 <b>GDP Growth Rate 2022:</b> 4.49%<br>                 <b>GDP Growth Rate 2023:</b> 6.50%             </div>`)[0];
+                popup_baec90305dba6fb752974e18161b898d.setContent(html_5a365ec8bba55fa45d09807db42742c5);
+            
+        
+
+        circle_marker_4c25bf110f73adb24340ee70717b8b9c.bindPopup(popup_baec90305dba6fb752974e18161b898d)
+        ;
+
+        
+    
+    
+            var circle_marker_c3266928b8e49a2e725efdef24c8e050 = L.circleMarker(
+                [38.0428, 114.5149],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.06, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_6a662ebe84d2ba5e7e336d7d555c283b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b55e9ab88ccaaed73d9a9b677cdc9ea1 = $(`<div id="html_b55e9ab88ccaaed73d9a9b677cdc9ea1" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Hebei<br>                 <b>Total Stores:</b> 403<br>                 <b>Growth Rate 2020:</b> -11.13%<br>                 <b>Growth Rate 2021:</b> -1.13%<br>                 <b>Growth Rate 2022:</b> -12.38%<br>                 <b>Growth Rate 2023:</b> 11.94%<br>                 <b>GDP Growth Rate 2020:</b> 3.36%<br>                 <b>GDP Growth Rate 2021:</b> 11.91%<br>                 <b>GDP Growth Rate 2022:</b> 4.84%<br>                 <b>GDP Growth Rate 2023:</b> 5.70%             </div>`)[0];
+                popup_6a662ebe84d2ba5e7e336d7d555c283b.setContent(html_b55e9ab88ccaaed73d9a9b677cdc9ea1);
+            
+        
+
+        circle_marker_c3266928b8e49a2e725efdef24c8e050.bindPopup(popup_6a662ebe84d2ba5e7e336d7d555c283b)
+        ;
+
+        
+    
+    
+            var circle_marker_97ad67b1ef3f9bd42e0bc968e0e6ce20 = L.circleMarker(
+                [23.379, 113.7633],
+                {"bubblingMouseEvents": true, "color": "lightcoral", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightcoral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.94, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_1a1c6ba5c68d3e99056ae60f2c4f02be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fa07d75ca8270800a9c7021bbd77fbe = $(`<div id="html_7fa07d75ca8270800a9c7021bbd77fbe" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Guangdong<br>                 <b>Total Stores:</b> 397<br>                 <b>Growth Rate 2020:</b> -13.86%<br>                 <b>Growth Rate 2021:</b> 0.74%<br>                 <b>Growth Rate 2022:</b> -12.59%<br>                 <b>Growth Rate 2023:</b> -1.19%<br>                 <b>GDP Growth Rate 2020:</b> 2.93%<br>                 <b>GDP Growth Rate 2021:</b> 12.20%<br>                 <b>GDP Growth Rate 2022:</b> 3.90%<br>                 <b>GDP Growth Rate 2023:</b> 4.04%             </div>`)[0];
+                popup_1a1c6ba5c68d3e99056ae60f2c4f02be.setContent(html_7fa07d75ca8270800a9c7021bbd77fbe);
+            
+        
+
+        circle_marker_97ad67b1ef3f9bd42e0bc968e0e6ce20.bindPopup(popup_1a1c6ba5c68d3e99056ae60f2c4f02be)
+        ;
+
+        
+    
+    
+            var circle_marker_344eb9fc93c63f9cae4460d19d33832f = L.circleMarker(
+                [34.7655, 113.7536],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.54, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_c62714374664d333e201bea68dd1e984 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86273ea875ef5d2f21b80b4122503c14 = $(`<div id="html_86273ea875ef5d2f21b80b4122503c14" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Henan<br>                 <b>Total Stores:</b> 377<br>                 <b>Growth Rate 2020:</b> -6.74%<br>                 <b>Growth Rate 2021:</b> -0.68%<br>                 <b>Growth Rate 2022:</b> -20.48%<br>                 <b>Growth Rate 2023:</b> 16.40%<br>                 <b>GDP Growth Rate 2020:</b> 0.78%<br>                 <b>GDP Growth Rate 2021:</b> 6.73%<br>                 <b>GDP Growth Rate 2022:</b> 1.73%<br>                 <b>GDP Growth Rate 2023:</b> 3.10%             </div>`)[0];
+                popup_c62714374664d333e201bea68dd1e984.setContent(html_86273ea875ef5d2f21b80b4122503c14);
+            
+        
+
+        circle_marker_344eb9fc93c63f9cae4460d19d33832f.bindPopup(popup_c62714374664d333e201bea68dd1e984)
+        ;
+
+        
+    
+    
+            var circle_marker_bdac81c15216ac4b2c63866b6c5db6fa = L.circleMarker(
+                [31.8257, 117.2264],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.76, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_cd40b151f4ab91a7f7e44b078e3bd6d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e90d3b383b4ef2018ff23cc0175247b6 = $(`<div id="html_e90d3b383b4ef2018ff23cc0175247b6" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Anhui<br>                 <b>Total Stores:</b> 338<br>                 <b>Growth Rate 2020:</b> -2.75%<br>                 <b>Growth Rate 2021:</b> 5.35%<br>                 <b>Growth Rate 2022:</b> -9.77%<br>                 <b>Growth Rate 2023:</b> 5.81%<br>                 <b>GDP Growth Rate 2020:</b> 2.78%<br>                 <b>GDP Growth Rate 2021:</b> 11.58%<br>                 <b>GDP Growth Rate 2022:</b> 5.62%<br>                 <b>GDP Growth Rate 2023:</b> 5.94%             </div>`)[0];
+                popup_cd40b151f4ab91a7f7e44b078e3bd6d2.setContent(html_e90d3b383b4ef2018ff23cc0175247b6);
+            
+        
+
+        circle_marker_bdac81c15216ac4b2c63866b6c5db6fa.bindPopup(popup_cd40b151f4ab91a7f7e44b078e3bd6d2)
+        ;
+
+        
+    
+    
+            var circle_marker_538387c8a08cb224c677a5695d0d17da = L.circleMarker(
+                [41.8354, 123.4291],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.26, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_40ac7865d05692f1ee4e224d26a8d3b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a1c50c0aed53a9110746564f430e49c = $(`<div id="html_5a1c50c0aed53a9110746564f430e49c" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Liaoning<br>                 <b>Total Stores:</b> 313<br>                 <b>Growth Rate 2020:</b> -15.80%<br>                 <b>Growth Rate 2021:</b> -2.02%<br>                 <b>Growth Rate 2022:</b> -25.12%<br>                 <b>Growth Rate 2023:</b> 10.24%<br>                 <b>GDP Growth Rate 2020:</b> 0.67%<br>                 <b>GDP Growth Rate 2021:</b> 10.19%<br>                 <b>GDP Growth Rate 2022:</b> 4.46%<br>                 <b>GDP Growth Rate 2023:</b> 5.55%             </div>`)[0];
+                popup_40ac7865d05692f1ee4e224d26a8d3b6.setContent(html_5a1c50c0aed53a9110746564f430e49c);
+            
+        
+
+        circle_marker_538387c8a08cb224c677a5695d0d17da.bindPopup(popup_40ac7865d05692f1ee4e224d26a8d3b6)
+        ;
+
+        
+    
+    
+            var circle_marker_6a43c11369d25eb63ee6b8dafef51ecf = L.circleMarker(
+                [25.0453, 102.7091],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.14, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_9fc7bd876ffc98e48e84735f7500368f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c030d039de57b61bbe9d7b26ba5ef713 = $(`<div id="html_c030d039de57b61bbe9d7b26ba5ef713" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Yunnan<br>                 <b>Total Stores:</b> 207<br>                 <b>Growth Rate 2020:</b> -17.79%<br>                 <b>Growth Rate 2021:</b> 2.77%<br>                 <b>Growth Rate 2022:</b> -14.16%<br>                 <b>Growth Rate 2023:</b> 9.69%<br>                 <b>GDP Growth Rate 2020:</b> 5.49%<br>                 <b>GDP Growth Rate 2021:</b> 10.63%<br>                 <b>GDP Growth Rate 2022:</b> 5.04%<br>                 <b>GDP Growth Rate 2023:</b> 4.42%             </div>`)[0];
+                popup_9fc7bd876ffc98e48e84735f7500368f.setContent(html_c030d039de57b61bbe9d7b26ba5ef713);
+            
+        
+
+        circle_marker_6a43c11369d25eb63ee6b8dafef51ecf.bindPopup(popup_9fc7bd876ffc98e48e84735f7500368f)
+        ;
+
+        
+    
+    
+            var circle_marker_ae41f76360cdbdcec82f75a85e080dc3 = L.circleMarker(
+                [37.8735, 112.5624],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.08, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_45ce93abb686b2d10b6db9eee5f8169e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4710bf45670fb8099c3b01ef8f2714e = $(`<div id="html_d4710bf45670fb8099c3b01ef8f2714e" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Shanxi<br>                 <b>Total Stores:</b> 204<br>                 <b>Growth Rate 2020:</b> -12.03%<br>                 <b>Growth Rate 2021:</b> -2.55%<br>                 <b>Growth Rate 2022:</b> -18.01%<br>                 <b>Growth Rate 2023:</b> 7.47%<br>                 <b>GDP Growth Rate 2020:</b> 5.15%<br>                 <b>GDP Growth Rate 2021:</b> 26.84%<br>                 <b>GDP Growth Rate 2022:</b> 11.11%<br>                 <b>GDP Growth Rate 2023:</b> 1.55%             </div>`)[0];
+                popup_45ce93abb686b2d10b6db9eee5f8169e.setContent(html_d4710bf45670fb8099c3b01ef8f2714e);
+            
+        
+
+        circle_marker_ae41f76360cdbdcec82f75a85e080dc3.bindPopup(popup_45ce93abb686b2d10b6db9eee5f8169e)
+        ;
+
+        
+    
+    
+            var circle_marker_b1739dcbb365a2b2857d93774ea34f94 = L.circleMarker(
+                [40.8175, 111.7652],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.82, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_aa7fcfc76eee52f9908b3a3f9db470a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcd9fc279e9b72851b9c1551635c7f4d = $(`<div id="html_bcd9fc279e9b72851b9c1551635c7f4d" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Neimenggu<br>                 <b>Total Stores:</b> 191<br>                 <b>Growth Rate 2020:</b> -22.80%<br>                 <b>Growth Rate 2021:</b> -4.28%<br>                 <b>Growth Rate 2022:</b> -17.76%<br>                 <b>Growth Rate 2023:</b> 12.51%<br>                 <b>GDP Growth Rate 2020:</b> 0.82%<br>                 <b>GDP Growth Rate 2021:</b> 22.48%<br>                 <b>GDP Growth Rate 2022:</b> 10.24%<br>                 <b>GDP Growth Rate 2023:</b> 5.15%             </div>`)[0];
+                popup_aa7fcfc76eee52f9908b3a3f9db470a7.setContent(html_bcd9fc279e9b72851b9c1551635c7f4d);
+            
+        
+
+        circle_marker_b1739dcbb365a2b2857d93774ea34f94.bindPopup(popup_aa7fcfc76eee52f9908b3a3f9db470a7)
+        ;
+
+        
+    
+    
+            var circle_marker_da8a1f1eba669b43bdc458e05a085e28 = L.circleMarker(
+                [30.5454, 114.3423],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_16efc9fe3583d315b9a4aeae8834f3a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c11dea70716b9356f10d8117ba6a96d7 = $(`<div id="html_c11dea70716b9356f10d8117ba6a96d7" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Hubei<br>                 <b>Total Stores:</b> 190<br>                 <b>Growth Rate 2020:</b> -27.38%<br>                 <b>Growth Rate 2021:</b> 4.41%<br>                 <b>Growth Rate 2022:</b> -12.92%<br>                 <b>Growth Rate 2023:</b> 30.60%<br>                 <b>GDP Growth Rate 2020:</b> -5.57%<br>                 <b>GDP Growth Rate 2021:</b> 16.45%<br>                 <b>GDP Growth Rate 2022:</b> 6.69%<br>                 <b>GDP Growth Rate 2023:</b> 6.27%             </div>`)[0];
+                popup_16efc9fe3583d315b9a4aeae8834f3a3.setContent(html_c11dea70716b9356f10d8117ba6a96d7);
+            
+        
+
+        circle_marker_da8a1f1eba669b43bdc458e05a085e28.bindPopup(popup_16efc9fe3583d315b9a4aeae8834f3a3)
+        ;
+
+        
+    
+    
+            var circle_marker_523d1092d111e5c197962961d9d8d3ad = L.circleMarker(
+                [27.6104, 111.7088],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.56, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_f0036e164c803941a25fb6cf621cd3a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_438be2d623d679041a027969c7864ed2 = $(`<div id="html_438be2d623d679041a027969c7864ed2" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Hunan<br>                 <b>Total Stores:</b> 178<br>                 <b>Growth Rate 2020:</b> 3.07%<br>                 <b>Growth Rate 2021:</b> -9.86%<br>                 <b>Growth Rate 2022:</b> -6.55%<br>                 <b>Growth Rate 2023:</b> 6.08%<br>                 <b>GDP Growth Rate 2020:</b> 4.42%<br>                 <b>GDP Growth Rate 2021:</b> 9.73%<br>                 <b>GDP Growth Rate 2022:</b> 4.82%<br>                 <b>GDP Growth Rate 2023:</b> 5.65%             </div>`)[0];
+                popup_f0036e164c803941a25fb6cf621cd3a7.setContent(html_438be2d623d679041a027969c7864ed2);
+            
+        
+
+        circle_marker_523d1092d111e5c197962961d9d8d3ad.bindPopup(popup_f0036e164c803941a25fb6cf621cd3a7)
+        ;
+
+        
+    
+    
+            var circle_marker_159d2ac5569e87a355efcd621f6c1fe1 = L.circleMarker(
+                [39.9042, 116.4074],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.18, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_2589ad8744cc16780247a019131d2e71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bed28fedac159701631fab8e09271898 = $(`<div id="html_bed28fedac159701631fab8e09271898" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Beijing<br>                 <b>Total Stores:</b> 159<br>                 <b>Growth Rate 2020:</b> -30.15%<br>                 <b>Growth Rate 2021:</b> 0.38%<br>                 <b>Growth Rate 2022:</b> -19.67%<br>                 <b>Growth Rate 2023:</b> 3.82%<br>                 <b>GDP Growth Rate 2020:</b> 1.95%<br>                 <b>GDP Growth Rate 2021:</b> 15.19%<br>                 <b>GDP Growth Rate 2022:</b> 1.97%<br>                 <b>GDP Growth Rate 2023:</b> 4.71%             </div>`)[0];
+                popup_2589ad8744cc16780247a019131d2e71.setContent(html_bed28fedac159701631fab8e09271898);
+            
+        
+
+        circle_marker_159d2ac5569e87a355efcd621f6c1fe1.bindPopup(popup_2589ad8744cc16780247a019131d2e71)
+        ;
+
+        
+    
+    
+            var circle_marker_aa48c9d5f397d98e24e68b2b60d23b6a = L.circleMarker(
+                [29.4316, 106.9123],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.08, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_962bc8ce1f2f283d58dbe802a14e2211 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e851518777fc6482c1654cb1c724e07 = $(`<div id="html_4e851518777fc6482c1654cb1c724e07" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Chongqing<br>                 <b>Total Stores:</b> 154<br>                 <b>Growth Rate 2020:</b> -5.82%<br>                 <b>Growth Rate 2021:</b> 0.59%<br>                 <b>Growth Rate 2022:</b> -18.23%<br>                 <b>Growth Rate 2023:</b> 18.00%<br>                 <b>GDP Growth Rate 2020:</b> 6.20%<br>                 <b>GDP Growth Rate 2021:</b> 11.66%<br>                 <b>GDP Growth Rate 2022:</b> 2.42%<br>                 <b>GDP Growth Rate 2023:</b> 6.40%             </div>`)[0];
+                popup_962bc8ce1f2f283d58dbe802a14e2211.setContent(html_4e851518777fc6482c1654cb1c724e07);
+            
+        
+
+        circle_marker_aa48c9d5f397d98e24e68b2b60d23b6a.bindPopup(popup_962bc8ce1f2f283d58dbe802a14e2211)
+        ;
+
+        
+    
+    
+            var circle_marker_c5cbd95fa868f46d3398d2e50fe5159e = L.circleMarker(
+                [34.3416, 108.9398],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.04, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_db0eb060635453eae279c447dd7437ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0be4fac54207374176efff6c9637425f = $(`<div id="html_0be4fac54207374176efff6c9637425f" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Shaanxi<br>                 <b>Total Stores:</b> 152<br>                 <b>Growth Rate 2020:</b> -14.46%<br>                 <b>Growth Rate 2021:</b> -5.64%<br>                 <b>Growth Rate 2022:</b> -23.21%<br>                 <b>Growth Rate 2023:</b> 10.13%<br>                 <b>GDP Growth Rate 2020:</b> 0.31%<br>                 <b>GDP Growth Rate 2021:</b> 15.89%<br>                 <b>GDP Growth Rate 2022:</b> 8.40%<br>                 <b>GDP Growth Rate 2023:</b> 2.85%             </div>`)[0];
+                popup_db0eb060635453eae279c447dd7437ae.setContent(html_0be4fac54207374176efff6c9637425f);
+            
+        
+
+        circle_marker_c5cbd95fa868f46d3398d2e50fe5159e.bindPopup(popup_db0eb060635453eae279c447dd7437ae)
+        ;
+
+        
+    
+    
+            var circle_marker_a28be15dac3ddacde5265f1a621350ce = L.circleMarker(
+                [26.0745, 119.2965],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.96, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_bb1a86fede3c913bcaa87317aa297c6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03a38d1e9ef45a5b55caf0c728535a73 = $(`<div id="html_03a38d1e9ef45a5b55caf0c728535a73" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Fujian<br>                 <b>Total Stores:</b> 148<br>                 <b>Growth Rate 2020:</b> -24.16%<br>                 <b>Growth Rate 2021:</b> -9.40%<br>                 <b>Growth Rate 2022:</b> -3.42%<br>                 <b>Growth Rate 2023:</b> 3.67%<br>                 <b>GDP Growth Rate 2020:</b> 2.83%<br>                 <b>GDP Growth Rate 2021:</b> 13.55%<br>                 <b>GDP Growth Rate 2022:</b> 5.03%<br>                 <b>GDP Growth Rate 2023:</b> 5.19%             </div>`)[0];
+                popup_bb1a86fede3c913bcaa87317aa297c6a.setContent(html_03a38d1e9ef45a5b55caf0c728535a73);
+            
+        
+
+        circle_marker_a28be15dac3ddacde5265f1a621350ce.bindPopup(popup_bb1a86fede3c913bcaa87317aa297c6a)
+        ;
+
+        
+    
+    
+            var circle_marker_625a3dbfef6dd7eedc1047309ac98ed5 = L.circleMarker(
+                [31.2304, 121.4737],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.92, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_cc020899aad1a5e33ac6d3d79d0969b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9178b60087de648650eb1102ef1f3668 = $(`<div id="html_9178b60087de648650eb1102ef1f3668" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Shanghai<br>                 <b>Total Stores:</b> 146<br>                 <b>Growth Rate 2020:</b> -15.48%<br>                 <b>Growth Rate 2021:</b> 1.49%<br>                 <b>Growth Rate 2022:</b> -27.73%<br>                 <b>Growth Rate 2023:</b> 15.30%<br>                 <b>GDP Growth Rate 2020:</b> 3.39%<br>                 <b>GDP Growth Rate 2021:</b> 13.11%<br>                 <b>GDP Growth Rate 2022:</b> 3.26%<br>                 <b>GDP Growth Rate 2023:</b> 5.78%             </div>`)[0];
+                popup_cc020899aad1a5e33ac6d3d79d0969b5.setContent(html_9178b60087de648650eb1102ef1f3668);
+            
+        
+
+        circle_marker_625a3dbfef6dd7eedc1047309ac98ed5.bindPopup(popup_cc020899aad1a5e33ac6d3d79d0969b5)
+        ;
+
+        
+    
+    
+            var circle_marker_ba66b0625eadd524d9a31603743a6bf7 = L.circleMarker(
+                [26.5982, 106.7074],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.68, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_b4352d6a428b79c9059ed91bade395ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9b7dfe783d11fed13daa49881bf7cbb = $(`<div id="html_f9b7dfe783d11fed13daa49881bf7cbb" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Guizhou<br>                 <b>Total Stores:</b> 134<br>                 <b>Growth Rate 2020:</b> -5.66%<br>                 <b>Growth Rate 2021:</b> -1.29%<br>                 <b>Growth Rate 2022:</b> -6.49%<br>                 <b>Growth Rate 2023:</b> 8.82%<br>                 <b>GDP Growth Rate 2020:</b> 6.12%<br>                 <b>GDP Growth Rate 2021:</b> 8.81%<br>                 <b>GDP Growth Rate 2022:</b> 3.30%<br>                 <b>GDP Growth Rate 2023:</b> 4.54%             </div>`)[0];
+                popup_b4352d6a428b79c9059ed91bade395ba.setContent(html_f9b7dfe783d11fed13daa49881bf7cbb);
+            
+        
+
+        circle_marker_ba66b0625eadd524d9a31603743a6bf7.bindPopup(popup_b4352d6a428b79c9059ed91bade395ba)
+        ;
+
+        
+    
+    
+            var circle_marker_e9cbd6291ab2170af13422e2275718a8 = L.circleMarker(
+                [43.6666, 126.1923],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.66, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_4a3bee882cee0ceba4ed3b0b1a2be674 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6913e758e6589520fd7088b8b4ee4038 = $(`<div id="html_6913e758e6589520fd7088b8b4ee4038" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Jilin<br>                 <b>Total Stores:</b> 133<br>                 <b>Growth Rate 2020:</b> -18.07%<br>                 <b>Growth Rate 2021:</b> -3.42%<br>                 <b>Growth Rate 2022:</b> -29.78%<br>                 <b>Growth Rate 2023:</b> 31.61%<br>                 <b>GDP Growth Rate 2020:</b> 4.60%<br>                 <b>GDP Growth Rate 2021:</b> 7.45%<br>                 <b>GDP Growth Rate 2022:</b> -2.31%<br>                 <b>GDP Growth Rate 2023:</b> 6.26%             </div>`)[0];
+                popup_4a3bee882cee0ceba4ed3b0b1a2be674.setContent(html_6913e758e6589520fd7088b8b4ee4038);
+            
+        
+
+        circle_marker_e9cbd6291ab2170af13422e2275718a8.bindPopup(popup_4a3bee882cee0ceba4ed3b0b1a2be674)
+        ;
+
+        
+    
+    
+            var circle_marker_d76a57478a8330d30c72aba9af044c2f = L.circleMarker(
+                [45.7421, 126.6625],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.56, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_897ab756bedbb6c03ac87b14234d43b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d31a733d597321c4d2f14da0de2c7fd = $(`<div id="html_0d31a733d597321c4d2f14da0de2c7fd" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Heilongjiang<br>                 <b>Total Stores:</b> 128<br>                 <b>Growth Rate 2020:</b> -23.79%<br>                 <b>Growth Rate 2021:</b> -1.05%<br>                 <b>Growth Rate 2022:</b> -17.38%<br>                 <b>Growth Rate 2023:</b> 5.00%<br>                 <b>GDP Growth Rate 2020:</b> 0.27%<br>                 <b>GDP Growth Rate 2021:</b> 9.23%<br>                 <b>GDP Growth Rate 2022:</b> 6.97%<br>                 <b>GDP Growth Rate 2023:</b> 0.68%             </div>`)[0];
+                popup_897ab756bedbb6c03ac87b14234d43b9.setContent(html_0d31a733d597321c4d2f14da0de2c7fd);
+            
+        
+
+        circle_marker_d76a57478a8330d30c72aba9af044c2f.bindPopup(popup_897ab756bedbb6c03ac87b14234d43b9)
+        ;
+
+        
+    
+    
+            var circle_marker_0d1aac76eb8d20c2ca6e898564dd59be = L.circleMarker(
+                [43.7928, 87.6177],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.52, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_310f5d5581c21d843df4efdb047f5a1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dac3a8d658cdc428aaa79a14dc32ca0d = $(`<div id="html_dac3a8d658cdc428aaa79a14dc32ca0d" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Xinjiang<br>                 <b>Total Stores:</b> 126<br>                 <b>Growth Rate 2020:</b> -34.55%<br>                 <b>Growth Rate 2021:</b> 10.38%<br>                 <b>Growth Rate 2022:</b> -25.29%<br>                 <b>Growth Rate 2023:</b> 53.19%<br>                 <b>GDP Growth Rate 2020:</b> 1.69%<br>                 <b>GDP Growth Rate 2021:</b> 17.73%<br>                 <b>GDP Growth Rate 2022:</b> 10.48%<br>                 <b>GDP Growth Rate 2023:</b> 5.68%             </div>`)[0];
+                popup_310f5d5581c21d843df4efdb047f5a1b.setContent(html_dac3a8d658cdc428aaa79a14dc32ca0d);
+            
+        
+
+        circle_marker_0d1aac76eb8d20c2ca6e898564dd59be.bindPopup(popup_310f5d5581c21d843df4efdb047f5a1b)
+        ;
+
+        
+    
+    
+            var circle_marker_35666e9952bc7e317abfb0ca654eaa1a = L.circleMarker(
+                [27.614, 115.7221],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.14, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_ea9dfbc904a305d3ba5d4269e40e00fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07bb3aa6e93c91512cac9c78ff5423bd = $(`<div id="html_07bb3aa6e93c91512cac9c78ff5423bd" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Jiangxi<br>                 <b>Total Stores:</b> 107<br>                 <b>Growth Rate 2020:</b> 17.64%<br>                 <b>Growth Rate 2021:</b> 9.73%<br>                 <b>Growth Rate 2022:</b> -6.93%<br>                 <b>Growth Rate 2023:</b> 6.25%<br>                 <b>GDP Growth Rate 2020:</b> 4.45%<br>                 <b>GDP Growth Rate 2021:</b> 15.54%<br>                 <b>GDP Growth Rate 2022:</b> 5.80%<br>                 <b>GDP Growth Rate 2023:</b> 3.51%             </div>`)[0];
+                popup_ea9dfbc904a305d3ba5d4269e40e00fb.setContent(html_07bb3aa6e93c91512cac9c78ff5423bd);
+            
+        
+
+        circle_marker_35666e9952bc7e317abfb0ca654eaa1a.bindPopup(popup_ea9dfbc904a305d3ba5d4269e40e00fb)
+        ;
+
+        
+    
+    
+            var circle_marker_213385b3b6b998e9efe99144741c367e = L.circleMarker(
+                [23.8298, 108.7881],
+                {"bubblingMouseEvents": true, "color": "lightcoral", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightcoral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.94, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_b0080f2a08ff2a231d48c0eebcdf9257 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1143506a89b8c2a30191a90169d67d29 = $(`<div id="html_1143506a89b8c2a30191a90169d67d29" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Guangxi<br>                 <b>Total Stores:</b> 97<br>                 <b>Growth Rate 2020:</b> -5.69%<br>                 <b>Growth Rate 2021:</b> 0.39%<br>                 <b>Growth Rate 2022:</b> -15.71%<br>                 <b>Growth Rate 2023:</b> -0.55%<br>                 <b>GDP Growth Rate 2020:</b> 4.26%<br>                 <b>GDP Growth Rate 2021:</b> 13.76%<br>                 <b>GDP Growth Rate 2022:</b> 4.38%<br>                 <b>GDP Growth Rate 2023:</b> 4.10%             </div>`)[0];
+                popup_b0080f2a08ff2a231d48c0eebcdf9257.setContent(html_1143506a89b8c2a30191a90169d67d29);
+            
+        
+
+        circle_marker_213385b3b6b998e9efe99144741c367e.bindPopup(popup_b0080f2a08ff2a231d48c0eebcdf9257)
+        ;
+
+        
+    
+    
+            var circle_marker_07aaa159c6b01f168094853647d8c986 = L.circleMarker(
+                [39.3434, 117.3616],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.32, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_b54b40d6cd2d0171537deb852171ba25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_269c6cd4d43dfb5b53474fe7315e3aaf = $(`<div id="html_269c6cd4d43dfb5b53474fe7315e3aaf" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Tianjin<br>                 <b>Total Stores:</b> 66<br>                 <b>Growth Rate 2020:</b> -8.54%<br>                 <b>Growth Rate 2021:</b> 11.02%<br>                 <b>Growth Rate 2022:</b> -23.08%<br>                 <b>Growth Rate 2023:</b> 10.58%<br>                 <b>GDP Growth Rate 2020:</b> 0.95%<br>                 <b>GDP Growth Rate 2021:</b> 13.09%<br>                 <b>GDP Growth Rate 2022:</b> 3.08%<br>                 <b>GDP Growth Rate 2023:</b> 3.76%             </div>`)[0];
+                popup_b54b40d6cd2d0171537deb852171ba25.setContent(html_269c6cd4d43dfb5b53474fe7315e3aaf);
+            
+        
+
+        circle_marker_07aaa159c6b01f168094853647d8c986.bindPopup(popup_b54b40d6cd2d0171537deb852171ba25)
+        ;
+
+        
+    
+    
+            var circle_marker_fe02bebddde6d4310069f21b7212e334 = L.circleMarker(
+                [36.0611, 103.8343],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_873352f1bfed3b9be43ac090b91fe7ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a15bab79f9b615e1e8b531ae4e2981b8 = $(`<div id="html_a15bab79f9b615e1e8b531ae4e2981b8" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Gansu<br>                 <b>Total Stores:</b> 65<br>                 <b>Growth Rate 2020:</b> -9.83%<br>                 <b>Growth Rate 2021:</b> -20.20%<br>                 <b>Growth Rate 2022:</b> -24.86%<br>                 <b>Growth Rate 2023:</b> 35.99%<br>                 <b>GDP Growth Rate 2020:</b> 2.98%<br>                 <b>GDP Growth Rate 2021:</b> 13.78%<br>                 <b>GDP Growth Rate 2022:</b> 8.91%<br>                 <b>GDP Growth Rate 2023:</b> 6.86%             </div>`)[0];
+                popup_873352f1bfed3b9be43ac090b91fe7ef.setContent(html_a15bab79f9b615e1e8b531ae4e2981b8);
+            
+        
+
+        circle_marker_fe02bebddde6d4310069f21b7212e334.bindPopup(popup_873352f1bfed3b9be43ac090b91fe7ef)
+        ;
+
+        
+    
+    
+            var circle_marker_be911f86ef51058e0b1d435dc4f793e9 = L.circleMarker(
+                [20.0174, 110.3492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.66, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_c6d089c0c0a2f8913aa54907deef71ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d90cfa49762798458e4a19bce0ec35d = $(`<div id="html_8d90cfa49762798458e4a19bce0ec35d" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Hainan<br>                 <b>Total Stores:</b> 33<br>                 <b>Growth Rate 2020:</b> 2.74%<br>                 <b>Growth Rate 2021:</b> 14.45%<br>                 <b>Growth Rate 2022:</b> -20.27%<br>                 <b>Growth Rate 2023:</b> 18.15%<br>                 <b>GDP Growth Rate 2020:</b> 3.65%<br>                 <b>GDP Growth Rate 2021:</b> 15.39%<br>                 <b>GDP Growth Rate 2022:</b> 6.21%<br>                 <b>GDP Growth Rate 2023:</b> 9.80%             </div>`)[0];
+                popup_c6d089c0c0a2f8913aa54907deef71ab.setContent(html_8d90cfa49762798458e4a19bce0ec35d);
+            
+        
+
+        circle_marker_be911f86ef51058e0b1d435dc4f793e9.bindPopup(popup_c6d089c0c0a2f8913aa54907deef71ab)
+        ;
+
+        
+    
+    
+            var circle_marker_987c26cf3e63fb674b3e4d555a3607cb = L.circleMarker(
+                [38.4712, 106.2587],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_2741b06161df225d254809a5d39f0b69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e224490c5435aa4f65d6b87c85bfe2c = $(`<div id="html_1e224490c5435aa4f65d6b87c85bfe2c" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Ningxia<br>                 <b>Total Stores:</b> 30<br>                 <b>Growth Rate 2020:</b> -2.74%<br>                 <b>Growth Rate 2021:</b> -12.87%<br>                 <b>Growth Rate 2022:</b> -11.21%<br>                 <b>Growth Rate 2023:</b> 43.81%<br>                 <b>GDP Growth Rate 2020:</b> 5.07%<br>                 <b>GDP Growth Rate 2021:</b> 15.62%<br>                 <b>GDP Growth Rate 2022:</b> 10.75%<br>                 <b>GDP Growth Rate 2023:</b> 3.88%             </div>`)[0];
+                popup_2741b06161df225d254809a5d39f0b69.setContent(html_1e224490c5435aa4f65d6b87c85bfe2c);
+            
+        
+
+        circle_marker_987c26cf3e63fb674b3e4d555a3607cb.bindPopup(popup_2741b06161df225d254809a5d39f0b69)
+        ;
+
+        
+    
+    
+            var circle_marker_9bb3d6182de9b81814f1cc185e6c78e1 = L.circleMarker(
+                [31.6927, 88.0924],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_927f474079b86717c01508575a89e323 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3484d4f11fccef7bf7f3bbf73916a28 = $(`<div id="html_b3484d4f11fccef7bf7f3bbf73916a28" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Tibet<br>                 <b>Total Stores:</b> 30<br>                 <b>Growth Rate 2020:</b> 24.58%<br>                 <b>Growth Rate 2021:</b> 58.56%<br>                 <b>Growth Rate 2022:</b> -22.35%<br>                 <b>Growth Rate 2023:</b> 46.53%<br>                 <b>GDP Growth Rate 2020:</b> 11.78%<br>                 <b>GDP Growth Rate 2021:</b> 9.64%<br>                 <b>GDP Growth Rate 2022:</b> 4.21%<br>                 <b>GDP Growth Rate 2023:</b> 13.31%             </div>`)[0];
+                popup_927f474079b86717c01508575a89e323.setContent(html_b3484d4f11fccef7bf7f3bbf73916a28);
+            
+        
+
+        circle_marker_9bb3d6182de9b81814f1cc185e6c78e1.bindPopup(popup_927f474079b86717c01508575a89e323)
+        ;
+
+        
+    
+    
+            var circle_marker_61da33c1c38eb7f60b8f55cc567db139 = L.circleMarker(
+                [36.62, 101.78],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_cf09336561a605ca0f1cc274796d2308);
+        
+    
+        var popup_b794bc21f1d8bf199f6c9ec8eacc712f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_224e3b321eb61735c2cebef7e8f36aa5 = $(`<div id="html_224e3b321eb61735c2cebef7e8f36aa5" style="width: 100.0%; height: 100.0%;">                 <b>Province:</b> Qinghai<br>                 <b>Total Stores:</b> 25<br>                 <b>Growth Rate 2020:</b> -4.14%<br>                 <b>Growth Rate 2021:</b> -17.87%<br>                 <b>Growth Rate 2022:</b> -28.34%<br>                 <b>Growth Rate 2023:</b> 14.56%<br>                 <b>GDP Growth Rate 2020:</b> 2.00%<br>                 <b>GDP Growth Rate 2021:</b> 11.87%<br>                 <b>GDP Growth Rate 2022:</b> 6.71%<br>                 <b>GDP Growth Rate 2023:</b> 4.67%             </div>`)[0];
+                popup_b794bc21f1d8bf199f6c9ec8eacc712f.setContent(html_224e3b321eb61735c2cebef7e8f36aa5);
+            
+        
+
+        circle_marker_61da33c1c38eb7f60b8f55cc567db139.bindPopup(popup_b794bc21f1d8bf199f6c9ec8eacc712f)
+        ;
+
+        
+    
+</script>
+</html>
